@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2</title>
+  </head>
+  <body>
+    <header>
+      <h1>Assignment 2 Enhanced Form Content</h1>
+    </header>
+    <main>
+      <section>
+        <h2>My Lists</h2>
+
+        <h3>Unordered List(CHARACTERS)</h3>
+        <p>
+          <video
+            width="640"
+            height="360"
+            controls
+            poster="preview.jpg"
+            aria-label="Anime highlights"
+          >
+            <source
+              src="https://cdn.pixabay.com/video/2021/07/30/83274-581386222_large.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </p>
+        <ul>
+          <li>Deku</li>
+          <li>Sung Jin Woo</li>
+          <li>Gojo</li>
+          <li>Tanjiro</li>
+        </ul>
+        <h3>Ordered lists (ANIME)</h3>
+        <ol type="A">
+          <li>My Hero Academia</li>
+          <li>Solo Leveling</li>
+          <li>Jujustu Kaisen</li>
+          <li>Demon Slayer</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>My Table (Anime)</h2>
+
+        <audio controls autoplay preload="auto">
+          <source
+            src="https://videos.pexels.com/video-files/5091624/5091624-hd_1920_1080_24fps.mp4"
+            type="audio/mp4"
+          />
+          Your browser does not support the audio element.
+        </audio>
+
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Anime</th>
+              <th>Main Character</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>My Hero Academia</td>
+              <td>Deku</td>
+            </tr>
+            <tr>
+              <td>Solo Leveling</td>
+              <td>Sung Jin Woo</td>
+            </tr>
+            <tr>
+              <td>Jujutsu Kaisen</td>
+              <td>Gojo</td>
+            </tr>
+            <tr>
+              <td>Demon Slayer</td>
+              <td>Tanjiro</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Contact Me Below</h2>
+
+        <form action="/submit-form" autocomplete="on" method="POST">
+          <label for="name"> Full Name </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="John Doe"
+            required
+            autocomplete="name"
+          />
+
+          <label for="email"> Email </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="your.email@example.com"
+            required
+            autocomplete="email"
+          />
+
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="123-456-7890"
+            autocomplete="tel"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          />
+
+          <label for="subject"> Subject </label>
+          <select id="subject" name="subject" required>
+            <option value="" disabled selected>Select a subject</option>
+            <option value="general">General Inquiry</option>
+            <option value="feedback">Feedback</option>
+          </select>
+
+          <label for="message"> Message </label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your message here..."
+            rows="5"
+            required
+          ></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>Coded by Nokhwezi Philander 2025</footer>
+  </body>
+</html>
